@@ -65,6 +65,7 @@ FROM girl_names ) AS popular_girl_names
 WHERE name='Micheal' ;
 ```
 ![Question 2](https://img.shields.io/badge/Question-2-971901)  
+
 *Find the names with the biggest jumps in popularity from the first
  year of the data set to the last year
 ```sql
@@ -94,7 +95,8 @@ ON t1.name=t2.name
 ORDER BY diff ;
 ```
 ![Question 3](https://img.shields.io/badge/Question-3-971901)  
-For each year, return the 3 most popular girl names and 3 most popular boy names  
+
+*For each year, return the 3 most popular girl names and 3 most popular boy names  
 ```sql
 SELECT * 
 FROM 
@@ -108,7 +110,8 @@ WHERE popularity <4;
 ```
  
  ![Question 4](https://img.shields.io/badge/Question-3-971901) 
- For each decade, return the 3 most popular girl names and 3 most popular boy names 
+ 
+ *For each decade, return the 3 most popular girl names and 3 most popular boy names 
 ```sql
 SELECT * 
 FROM 
@@ -125,7 +128,8 @@ FROM babies_by_decade ) AS Top_three
 WHERE popularity <4;
 ```
 ![Question 5](https://img.shields.io/badge/Question-3-971901) 
-Return the number of babies born in each of the six regions (NOTE: The state of MI should be in the Midwest region) 
+
+*Return the number of babies born in each of the six regions (NOTE: The state of MI should be in the Midwest region) 
 ```sql
 WITH clean_regions AS ( SELECT State , 
 CASE when Region='New England' THEN 'New_England' ELSE Region END AS clean_region
@@ -138,7 +142,8 @@ ON n.State=cr.State
 GROUP BY clean_region ;
 ```
 ![Question 6](https://img.shields.io/badge/Question-3-971901) 
-Return the 3 most popular girl names and 3 most popular boy names within each region
+
+*Return the 3 most popular girl names and 3 most popular boy names within each region
 ```sql
 SELECT *
 FROM
