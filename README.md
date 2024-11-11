@@ -8,9 +8,13 @@
    * 💻 [Key Highlights](#-key-highlight)
 ## 🛠️ Overview
 With the **Baby Name Trend Analysis Case Study**, I queried data to bring insights to the following objectives:
-1️⃣ Track changes in name popularity
-2️⃣ Compare popularity across decades
-3️⃣ Compare popularity across regions
+
+1️⃣ Track changes in name popularity 
+
+2️⃣ Compare popularity across decades 
+
+3️⃣ Compare popularity across regions 
+
 4️⃣ Explore unique names in the dataset 
 
 ## 🚀 Solutions 
