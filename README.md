@@ -20,6 +20,7 @@ With the **Baby Name Trend Analysis Case Study**, I queried data to bring insigh
 ## 🚀 Solutions 
 
 ![Question 1](https://img.shields.io/badge/Question-1-971901) 
+
 *Find the overall most popular girl and boy names and show how they have changed in popularity rankings over the years
 ```sql
 SELECT Name, sum(Births) AS num_babies
@@ -28,6 +29,7 @@ WHERE Gender='F'
 GROUP BY name 
 ORDER BY num_babies DESC
 LIMIT 1;
+```
 ---Jessica
 ```sql
 SELECT * FROM
